@@ -8,4 +8,4 @@ WORKDIR /comfyui
 #install custom nodes
 RUN comfy-node-install comfyui-kjnodes rgthree-comfy comfyui-supir comfyui_essentials
 
-COPY extra_model_paths.yaml ./
+ADD extra_model_paths.yaml ./
